@@ -13,19 +13,23 @@
 /* DONE 3.0: Create an animation that increases and decreases the scale of the box  */
 .todo-0-container .box {
   /* Apply animation here */
-  animation-name: grow;
+  animation-name: pulse;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function: ease-in-out;
 }
-@keyframes grow {
-  50% {
-    transform: scaleX(1.1);
+@keyframes pulse {
+  0% {
+    transform: scaleX(1);
     background-color: red;
   }
-  100% {
-    transform: scaleX(1.8);
+  50% {
+    transform: scaleX(2);
     background-color: blue;
+  }
+  100% {
+    transform: scaleX(1);
+    background-color: red;
   }
 }
 
@@ -57,7 +61,7 @@ Set more key frames between 0% and 100%. */
 .todo-2-container .box {
   /* Apply animation here */
   animation-name: grow;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
