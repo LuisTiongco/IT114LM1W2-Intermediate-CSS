@@ -20,7 +20,7 @@
 }
 @keyframes grow {
   50% {
-    transform: scaleX(1);
+    transform: scaleX(1.1);
     background-color: red;
   }
   100% {
@@ -42,6 +42,10 @@ Set more key frames between 0% and 100%. */
   0% {
     transform: translateX(0px);
     background-color: red;
+  }
+  50% {
+    transform: translateX(150px);
+    background-color: purple;
   }
   100% {
     transform: translateX(300px);
