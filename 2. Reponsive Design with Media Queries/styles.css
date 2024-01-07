@@ -46,7 +46,7 @@ For each break point, the background of .common-breakpoints must change
   height: 300px;
   background-color: blue;
   @media screen and (min-width: 320px) and (min-height: 480px) {
-    background-color: red;
+    background-color: orange;
   }
   @media screen and (min-width: 481px) and (min-height: 768px) {
     background-color: green;
